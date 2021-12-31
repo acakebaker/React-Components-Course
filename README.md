@@ -1,6 +1,5 @@
 MODERN REACT WITH REDUX
 
-#Started: 
-12/30/2021
-#Finished: 
-12/30/2021
+<b>Started:</b> 12/30/2021
+<hr>
+<b>Finished:</b> 12/30/2021
