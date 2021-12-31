@@ -1,21 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CommentDetail from './components/CommentDetail';
+import ApprovalCard from './components/ApprovalCard';
 
 const App = () => {
   return (
     <div className='ui container comments'>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' />
-        </a>
-        <div className='content'>
-          <a href='/' className='author'>Alex</a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:00 PM</span>
-          </div>
-          <div className='text'>Nice blog post!</div>
+      <ApprovalCard>
+        <div>
+        <h3>Warning!</h3>
+        <p>Are you sure you want this?</p>
         </div>
-      </div>
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail 
+          name='Alex' 
+          time='Today at 1:00 PM' 
+          text='Nice blog post!' 
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail 
+          name='Sam' 
+          time='Yesterday at 8:00 PM' 
+          text='I love this blog so much!' 
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail 
+          name='Dylan' 
+          time='Yesterday at 11:00 AM' 
+          text='You have a large cock Alex!!! I fucking love how big and juicy it is man!' 
+        />
+      </ApprovalCard>
     </div>
   );
 }
